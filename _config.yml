@@ -1,9 +1,9 @@
 # ----
 # Site
 
-title: Aviator
-description: Jekyll template for API documentation.
-url: https://example.com
+title: Kitemaker API docs
+description: API documentation for Kitemaker REST API
+url: https://kitemaker.co
 google_analytics_key:
 permalink: pretty
 baseurl:
@@ -29,18 +29,15 @@ exclude:
   - LICENSE
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: default
-  -
-    scope:
+  - scope:
       type: "documentation"
     values:
       _hide_content: true
-  -
-    scope:
+  - scope:
       type: "api"
     values:
       _hide_content: true
