@@ -5,11 +5,13 @@ parameters:
   - name:
     content:
 content_markdown: |-
+  These are the global errors which can occur. Any errors specific to the endpoint will be mentioned in that section
+
   | Code | Name | Description |
   | --- | --- | --- |
-  | 200 | OK | Success |
-  | 201 | Created | Creation Successful |
+  | 400 | Bad request | Invalid parameters |
   | 401 | Unauthorized | We couldn't authenticate you |
+  | 429 | Too many requests | Rate limit exceeded |
 
   All errors will return JSON in the following format:
 left_code_blocks:

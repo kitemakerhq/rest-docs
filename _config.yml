@@ -20,6 +20,12 @@ collections:
   api:
     title: APIs
     position_number: 2
+  recent:
+    title: Recent
+    position_number: 3
+  metadata:
+    title: Metadata
+    position_number: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

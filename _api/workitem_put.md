@@ -1,13 +1,15 @@
 ---
 title: /workitem
-position_number: 1.2
-type: post
-description: Create Work Item
+position_number: 1.3
+type: put
+description: Update a Work Item
 parameters:
+  - name: id
+    content: The ID of the work item
   - name: title
-    content: The title of the work item
+    content: (Optional) The title of the work item
   - name: statusId
-    content: The status ID (column) where the work item will be created
+    content: (Optional) The status ID (column) where the work item will be created
   - name: description
     content: (Optional) The description of the work item. Markdown supported
   - name: labelIds[]
@@ -20,9 +22,9 @@ parameters:
     content: (Optional) The placement in the status column. One of ['top', 'bottom']. Defaults to 'top'
 
 content_markdown: |-
-  Creates a new work item and returns the content
+  Updates a new work item and returns the content. Only provided fields will be updated
 
-  201 Returns the work item
+  200 Returns the updated work item
   {: .success}
 
   #### Error codes
@@ -31,11 +33,11 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       curl \
-        -X POST \
+        -X PUT \
         -H "Accept: application/json" \ 
         -H "X-API-KEY: <TOKEN>" \
         https://toil.kitemaker.co/developers/rest/v1/workitem \
-        -d '{"title":"This is my title","statusId": "1adf8dc...", "description": "Lorem ipsum dolor sit amet"}'
+        -d '{"id": "136975ca1bb5d800", "title":"This is my title","statusId": "1adf8dc...", "description": "Lorem ipsum dolor sit amet"}'
     title: Example
     language: curl
 right_code_blocks:
