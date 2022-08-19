@@ -5,23 +5,10 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
+  This site describes the REST API available in Kitemaker. This allows you to interact with work items etc as an alternative, though not as fully fledged as the GraphQL developer API.
 
-  This API document is designed for those interested in developing for our platform.
-
-  This API is still under development and will evolve.
-
-  You'll succeed if you do this.
-  {: .success }
-
-  Here's some useful information.
+  For questions or comments, please reach out at [hi@kitemaker.co](mailto:hi@kitemaker.co) or leave us an issue in the [repository](https://github.com/kitemakerhq/rest-docs) of this documentation.
   {: .info }
-
-  Something may not happen if you try and do this.
-  {: .warning }
-
-  Something bad will happen if you do this.
-  {: .error }
 left_code_blocks:
   - code_block:
     title:

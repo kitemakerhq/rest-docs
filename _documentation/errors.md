@@ -5,12 +5,13 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  These are the global errors which can occur. Any errors specific to the endpoint will be mentioned in that section
+  These are the common errors which can occur. Any errors specific to the endpoint will be mentioned in that section
 
   | Code | Name | Description |
   | --- | --- | --- |
   | 400 | Bad request | Invalid parameters |
   | 401 | Unauthorized | We couldn't authenticate you |
+  | 404 | Not found | The space or work item could not be found |
   | 429 | Too many requests | Rate limit exceeded |
 
   All errors will return JSON in the following format:
