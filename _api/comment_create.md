@@ -4,7 +4,7 @@ position_number: 2.1
 type: post
 description: Create a new comment
 parameters:
-  - name: issueId
+  - name: workItemId
     content: The ID of the work item to comment on
   - name: body
     content: The body of the comment. Markdown supported
@@ -25,7 +25,7 @@ left_code_blocks:
         -H "Accept: application/json" \ 
         -H "X-API-KEY: <TOKEN>" \
         https://toil.kitemaker.co/developers/rest/v1/comment \
-        -d '{"issueId": "136975ca1bb5d800", "body": "Hey there!"}'
+        -d '{"workItemId": "136975ca1bb5d800", "body": "Hey there!"}'
     title: Example
     language: curl
 right_code_blocks:

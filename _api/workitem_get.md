@@ -6,10 +6,10 @@ description: Create Work Item
 parameters:
   - name: spaceKey
     content: The key for the space of the work item
-  - name: issueNumber
-    content: The issue number of hte work item
+  - name: workItemNumber
+    content: The work item number
 content_markdown: |-
-  Retrieves a work item specified by the space key and issue number
+  Retrieves a work item specified by the space key and work item number
 
   200 Returns the work item
   {: .success}
@@ -21,7 +21,7 @@ left_code_blocks:
       curl \
         -H "Accept: application/json" \ 
         -H "X-API-KEY: <TOKEN>" \
-        https://toil.kitemaker.co/developers/rest/v1/workitem
+        https://toil.kitemaker.co/developers/rest/v1/workitem?spaceKey=KM&workItemNumber=123
     title: Example
     language: bash
 right_code_blocks:
