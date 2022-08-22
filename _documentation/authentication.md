@@ -10,7 +10,7 @@ content_markdown: |-
   Add the `X-API-KEY` header to the request with your token.
   {: .warning }
 
-  ![name of the image](/images/access_tokens.png)
+  ![name of the image](./images/access_tokens.png)
 
 left_code_blocks:
   - code_block:
